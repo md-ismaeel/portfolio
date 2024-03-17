@@ -1,0 +1,107 @@
+.personal-container {
+    width: 15rem;
+    min-height: 10rem;
+    padding: 10px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #21849E;
+    border: 1px solid white;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+.personal-img img {
+    object-fit: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.name-para {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.name-para h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.name-para p {
+    padding: 5px 40px;
+    background-color: #215867;
+    border-radius: 2rem;
+    color: white;
+    filter: drop-shadow(1px 1px 5px white);
+}
+
+.personal-hr {
+    width: 11rem;
+    height: 1.5px;
+    color: #217F9A;
+    background-color: #217F9A;
+}
+
+.personal-detail-box {
+    margin-top: 1rem;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-age,
+.personal-location,
+.personal-type {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.personal-age span,
+.personal-location span,
+.personal-type span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 13px;
+    border-radius: 10px;
+    background-color: #22272D;
+}
+
+.personal-age svg,
+.personal-location svg,
+.personal-type svg {
+    width: 1.5vw;
+    fill: #FFDB70;
+}
+
+.opacity-dull {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.react-icons {
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    background-color: transparent;
+}
