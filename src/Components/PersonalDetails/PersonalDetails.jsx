@@ -1,12 +1,47 @@
 
 import myImage from "../../assets/personalImage/ismail-img.jpg"
 import "../PersonalDetails/PersonalDetails.css"
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub, CiLinkedin, FaInstagram, FaTwitter} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 export const PersonalDetail = () => {
+
+    const [age, setAge] = useState(0);
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        let interval = null;
+        if (age < 24) {
+            interval = setInterval(() => {
+                setAge((prev) => prev + 1)
+            }, 50);
+        }
+
+        return () => clearInterval(interval)
+
+    }, [age])
+
+
+    const text = Array.from({ length: 16 }, () =>
+        Array.from({ length: 15 }, () => Math.round(Math.random())).join("")
+    );
+    text[text.length - 1] = "Hello World!!";
+
+    useEffect(() => {
+        let intervalId = setInterval(() => {
+            setIndex((prevIndex) => prevIndex + 1);
+
+            if (text[index] === "Hello World!!") { // Corrected the string to match the text content
+                clearInterval(intervalId);
+                setIndex(text.length - 1);
+            }
+        }, 50);
+
+        return () => clearInterval(intervalId);
+    }, [text, index]);
+
     return (
         <>
             <div className="personal-container">
@@ -14,8 +49,8 @@ export const PersonalDetail = () => {
                     <img src={myImage} height={'200px'} width={'150px'} alt="dp-image" />
                 </div>
                 <div className="name-para">
-                    <h3> Md Ismail</h3>
-                    <p>Hello world!!</p>
+                    <h3> MD ISMAIL</h3>
+                    <p>{text[index]}</p>
                     <br />
                     <hr className="personal-hr" />
                 </div>
@@ -27,7 +62,7 @@ export const PersonalDetail = () => {
 
                         <div style={{ color: 'white' }}>
                             <p className="opacity-dull">AGE</p>
-                            <p>24 Year Old</p>
+                            <p>{age} Year Old</p>
                         </div>
                     </div>
                     <div className="personal-location">
@@ -53,10 +88,10 @@ export const PersonalDetail = () => {
                 </div>
 
                 <div className="react-icons">
-                    <FaGithub />
-                    <CiLinkedin />
-                    <FaInstagram />
-                    <FaTwitter />
+                    <a href="https://github.com/Md-ismaeel"><FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/md-ismaeel-73b636224/"><CiLinkedin /></a>
+                    <a href="https://www.instagram.com/ismail_15_/"><FaInstagram /></a>
+                    <a href="https://twitter.com/impossible_br03"><FaTwitter /></a>
                 </div>
             </div>
 

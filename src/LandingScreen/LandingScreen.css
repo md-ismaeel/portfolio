@@ -1,0 +1,7 @@
+.landing-container {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
