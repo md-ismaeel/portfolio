@@ -1,0 +1,14 @@
+.list-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24rem;
+    height: 3rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}

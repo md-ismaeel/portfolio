@@ -1,23 +1,28 @@
 import React, { useState } from "react";
 import "../../ProfessionalDetails/About/About.css";
-export const About = () => {
-    const [showMore, setShowMore] = useState(false);
+import ProgrammingLanguages from "./ProgrammingLanguages";
+import Navbar from "../../Navbar/Navbar";
+import Skills from "./Skills";
 
+export const About = () => {
+
+    const [showMore, setShowMore] = useState(false);
     const onClickHandler = () => {
         setShowMore(!showMore);
     };
 
     return (
         <div className="about-container">
+            <Navbar />
             <div>
                 <h1 className="heading-about-name">About Me</h1>
             </div>
+
             <div className="about-me">
                 <p className="about-me-text">
-                    Hello there! 👋 My name is ismail and I'm from Berlin, Germany. As a
+                    Hello there! 👋 My name is ismail and I'm from India. As a
                     Full-Stack software developer, I specialize in creating visually
-                    appealing websites, apps and mobile games. My passion for graphic
-                    design isn't just a hobby, it's a key ingredient in every project I
+                    appealing websites, apps and mobile games. My passion for development isn't just a hobby, it's a key ingredient in every project I
                     work on.
                 </p>
                 {showMore ? (
@@ -59,6 +64,21 @@ export const About = () => {
                     </button>
                 )}
             </div>
+
+            <div>
+                <h2 className="lang">Languages</h2>
+            </div>
+
+            <div className="language-box">
+                <ProgrammingLanguages />
+            </div>
+
+            <div className="development-skills">
+                <h2 style={{ textAlign: 'center', margin: '2rem', color: 'white' }}>Development Skills</h2>
+                <Skills />
+            </div>
+
+
         </div>
     );
 };

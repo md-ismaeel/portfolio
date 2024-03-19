@@ -1,13 +1,15 @@
+
+import { Outlet } from 'react-router-dom';
 import { PersonalDetail } from "../Components/PersonalDetails/PersonalDetails";
-import { About } from "../Components/ProfessionalDetails/About/About";
-import "../LandingScreen/LandingScreen.css"
+import "./Layout.css"
 
 
-export const LandingScreen = () => {
+export const Layout = () => {
+
     return (
         <div className="landing-container">
             <PersonalDetail />
-            <About />
+            <Outlet />
         </div>
     );
 }

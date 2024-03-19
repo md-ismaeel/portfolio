@@ -1,0 +1,16 @@
+.programming-lang-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #22677B;
+    padding: 20px;
+}
+
+.coding-lang {
+    width: 50%;
+}
+
+.human-lang {
+    width: 50%;
+}

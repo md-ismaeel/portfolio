@@ -1,6 +1,6 @@
 .personal-container {
     width: 15rem;
-    min-height: 10rem;
+    height: 44rem;
     padding: 10px;
     display: flex;
     flex-direction: column;

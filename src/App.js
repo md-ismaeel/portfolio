@@ -1,17 +1,42 @@
-import { useState } from 'react'
-import './App.css'
-import { LandingScreen } from './LandingScreen/LandingScreen'
+import "./App.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { About } from "./Components/ProfessionalDetails/About/About";
+import Certificate from "./Components/ProfessionalDetails/Certificate/Certificate";
+import Project from "./Components/ProfessionalDetails/Projects/Project";
+import Contact from "./Components/ProfessionalDetails/Contact/Contact";
+import { Layout } from "./Layout/Layout";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <About />,
+        },
+        {
+          path: "/certificate",
+          element: <Certificate />,
+        },
+        {
+          path: "project",
+          element: <Project />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
+      ],
+    },
+  ]);
 
   return (
     <>
-      <div>
-        <LandingScreen />
-      </div>
+      <RouterProvider router={router}></RouterProvider>
     </>
-  )
+  );
 }
 
 export default App;
