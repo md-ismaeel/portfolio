@@ -12,23 +12,32 @@
     /* overflow-y: scroll; */
 }
 
-.heading-about-name {
+
+.heading-name {
+    display: inline-block;
     color: white;
+    position: relative;
 }
 
-.heading-about-name::after {
-    content: "";
+.heading-name::after {
+    content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
+    width: 30%;
+    transform: scaleX(1);
     height: 5px;
-    color: red;
+    bottom: -15px;
+    left: 0;
+    background-color: #FEC865;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 10rem;
 }
+
 
 .about-me {
     width: 100%;
     height: auto;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,4 +91,39 @@
 .development-skills {
     width: 100%;
     margin-bottom: 2rem;
+    padding: 4rem 3rem;
+    background-color: #22677B;
+    border-radius: 20px;
+}
+
+.explore-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.box-1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #22677B;
+    padding: 2.5rem 1rem;
+    border-radius: 17px;
+    margin-bottom: 2rem;
+}
+.exp-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+.exp-para {
+    list-style: 1.6;
+
 }

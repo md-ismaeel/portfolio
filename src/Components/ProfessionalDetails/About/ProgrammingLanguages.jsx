@@ -34,7 +34,7 @@ const ProgrammingLanguages = () => {
 
             {programmingLanguage.map((items, index) => {
               return (
-                <div key={index} style={{ display: 'flex', flexDirection: 'column', color: 'white', gap: '10px' }}>
+                <div key={index} style={{ display: 'flex', flexDirection: 'column', color: 'white', gap: '5px' }}>
                   <div style={{ display: 'flex', gap: '10px' }}>
                     <h4>{items.name}</h4>
                     <span style={{ opacity: '0.8' }}>{items.proficiency}</span>
@@ -58,7 +58,7 @@ const ProgrammingLanguages = () => {
             {humanLanguage.map((items, index) => {
               return (
 
-                <div key={index} style={{ display: 'flex', flexDirection: 'column', color: 'white', gap: '10px' }}>
+                <div key={index} style={{ display: 'flex', flexDirection: 'column', color: 'white', gap: '5px' }}>
                   <div style={{ display: 'flex', gap: '10px' }}>
                     <h4>{items.name}</h4>
                     <span style={{ opacity: '0.8' }}>{items.proficiency}</span>

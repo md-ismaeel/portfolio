@@ -15,7 +15,7 @@ export const About = () => {
         <div className="about-container">
             <Navbar />
             <div>
-                <h1 className="heading-about-name">About Me</h1>
+                <h1 className="heading-name">About Me</h1>
             </div>
 
             <div className="about-me">
@@ -65,6 +65,30 @@ export const About = () => {
                 )}
             </div>
 
+            <div className="exploring-creativity">
+                <div style={{ textAlign: 'center', color: 'white', marginBottom:'2rem'}}>
+                    <h2>Exploring creativity</h2>
+                </div>
+                <div className="explore-box">
+
+                    <div className="box-1">
+                        <img src="https://oktayshakirov.com/assets/images/icon-video.svg" alt="video-icon" width={"50px"} height={"50"} />
+                        <div className="exp-para">
+                            <h3>Visual Storytelling</h3>
+                            <p>Taking and editing photos or videos that tell engaging stories, bringing concepts and ideas to life visually.</p>
+                        </div>
+                    </div>
+
+                    <div className="box-1">
+                        <img src="https://oktayshakirov.com/assets/images/icon-multimedia.svg" alt="multimedia-icon" width={"50px"} height={"50"} />
+                        <div className="exp-para">
+                            <h3>Digital Content Creation</h3>
+                            <p>Creating dynamic digital content, such as 3D models, graphics animations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div>
                 <h2 className="lang">Languages</h2>
             </div>
@@ -73,8 +97,10 @@ export const About = () => {
                 <ProgrammingLanguages />
             </div>
 
+            <div>
+                <h2 style={{ textAlign: 'center', margin: '1rem', color: 'white' }}>Development Skills</h2>
+            </div>
             <div className="development-skills">
-                <h2 style={{ textAlign: 'center', margin: '2rem', color: 'white' }}>Development Skills</h2>
                 <Skills />
             </div>
 

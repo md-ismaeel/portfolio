@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../Navbar/Navbar.css"
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+
+    const [active, setActive] = useState(0);
+
+    // useEffect(()=> {
+    //     setActive(location.pathname)
+    // })
+
+
     const linkStyle = {
         color: 'white',
         textDecoration: 'none',
         padding: '10px',
+        fontSize: '18px',
+        opacity: '0.8'
     }
 
     return (

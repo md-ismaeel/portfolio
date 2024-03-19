@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ' PoppinsTahoma', sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 body {
-  background-color: #21CAF4;
-  /* overflow-y: hidden; */
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #21849E 0%, #21CAF4);
 }
 
 .App {

@@ -1,9 +1,14 @@
 import React from 'react'
+import "../Projects/Project.css"
+import Navbar from '../../Navbar/Navbar'
 
 const Project = () => {
   return (
-    <div>
-      <>ismail</>
+    <div className='project-container'>
+      <Navbar/>
+      <div>
+        <h1 className='heading-name'>My Projects</h1>
+      </div>
     </div>
   )
 }

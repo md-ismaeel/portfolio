@@ -4,11 +4,31 @@
     min-width: 10rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     gap: 1.5rem;
     background-color: #21849E;
     border: 1px solid white;
     border-radius: 20px;
     padding: 2rem 2rem;
+    /* overflow-y: scroll; */
+}
+
+
+.heading-name {
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+.heading-name::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    transform: scaleX(1);
+    height: 5px;
+    bottom: -15px;
+    left: 0;
+    background-color: #FEC865;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 10rem;
 }

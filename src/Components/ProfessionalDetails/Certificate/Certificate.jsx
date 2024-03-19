@@ -4,8 +4,10 @@ import Navbar from '../../Navbar/Navbar'
 const Certificate = () => {
   return (
     <div className='certificate-container'>
-    <Navbar/>
-      Certificate
+      <Navbar />
+      <div>
+        <h1 className="heading-name">My Certificates</h1>
+      </div>
     </div>
   )
 }

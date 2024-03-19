@@ -82,7 +82,7 @@ export const PersonalDetail = () => {
 
                         <div style={{ color: 'white' }}>
                             <p className="opacity-dull">PERSONALITY TYPE</p>
-                            <p>Developer</p>
+                            <p>INTJ-T</p>
                         </div>
                     </div>
                 </div>
