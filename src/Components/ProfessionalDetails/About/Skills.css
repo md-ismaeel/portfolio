@@ -12,6 +12,9 @@
 }
 
 .li-items img:hover {
+  transition: all;
+  transition: ease-out;
+  transition-duration: 0.3s;
   cursor: pointer;
   filter: drop-shadow(2px 4px 29px rgb(246, 246, 107));
 }
@@ -24,14 +27,14 @@
 /* width */
 .div-style::-webkit-scrollbar {
   height: 6px;
-  
+
 }
 
 /* Track */
 .div-style::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px black;
   border-radius: 4px;
-  
+
 }
 
 /* Handle */

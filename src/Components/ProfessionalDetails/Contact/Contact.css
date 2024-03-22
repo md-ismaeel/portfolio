@@ -4,7 +4,7 @@
     min-width: 10rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
     background-color: #21849E;
     border: 1px solid white;
     border-radius: 20px;
@@ -31,4 +31,75 @@
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     border-radius: 10rem;
+}
+
+.email-box {
+    width: 100%;
+    height: 12rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #22677B;
+    border-radius: 20px;
+}
+
+.email-box h2 {
+    color: white;
+}
+
+.email-input {
+    outline: 0;
+    border: 0;
+    min-width: 16.5rem;
+    font-size: 17px;
+    background-color: #2D4C55;
+    color: white;
+    padding: 12px 0;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+.copy-btn {
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    background-color: #383838;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #22677B;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.img-div img:hover {
+    transition: all;
+    transition: ease-out;
+    transition-duration: .3s;
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 29px rgb(246, 246, 107));
 }
