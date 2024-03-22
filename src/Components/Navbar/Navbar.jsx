@@ -4,35 +4,28 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
 
+    const location = useLocation();
+
     const [active, setActive] = useState(0);
 
-    // useEffect(()=> {
-    //     setActive(location.pathname)
-    // })
-
-
-    const linkStyle = {
-        color: 'white',
-        textDecoration: 'none',
-        padding: '10px',
-        fontSize: '18px',
-        opacity: '0.8'
-    }
+    useEffect(() => {
+        setActive(location.pathname)
+    }, [location])
 
     return (
         <>
             <ul className='list-container' style={{ backgroundColor: "#294047", display: 'flex', color: 'white' }}>
-                <li>
-                    <NavLink to="/" style={linkStyle}>About</NavLink>
+                <li className='nav-list'>
+                    <NavLink to="/" style={{ color: active === "/" ? '#FFDB70' : 'white' }}>About</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/certificate" style={linkStyle}>Certificate</NavLink>
+                <li className='nav-list'>
+                    <NavLink to="/certificate" style={{ color: active === "/certificate" ? '#FFDB70' : 'white' }}>Certificate</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/project" style={linkStyle}>Project</NavLink>
+                <li className='nav-list'>
+                    <NavLink to="/project" style={{ color: active === "/project" ? '#FFDB70' : 'white' }}>Project</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/contact" style={linkStyle}>Contact</NavLink>
+                <li className='nav-list'>
+                    <NavLink to="/contact" style={{ color: active === "/contact" ? '#FFDB70' : 'white' }}>Contact</NavLink>
                 </li>
             </ul>
         </>

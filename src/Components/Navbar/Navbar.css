@@ -12,3 +12,11 @@
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
+.nav-list a {
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 18px;
+    padding: 10px;
+
+}

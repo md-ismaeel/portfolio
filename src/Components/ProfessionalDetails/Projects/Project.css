@@ -53,3 +53,27 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+#pro-img:hover {
+    filter: opacity(0.5);
+}
+
+#ac-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: #22687D;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: #F2D470;
+    font-weight: 600;
+}
+
+#ac-btn:hover {
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #214753;
+}

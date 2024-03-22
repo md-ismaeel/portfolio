@@ -2,10 +2,10 @@ import React from "react";
 
 import foodAppImg from "../../../assets/ProjectImages/foodApp.png"
 import passwordGeneratorImg from "../../../assets/ProjectImages/passwordGenerator.png"
-import healthImg from "../../../assets/ProjectImages/foodApp.png"
-import groceryBudImg from "../../../assets/ProjectImages/foodApp.png"
-import movieAppImg from "../../../assets/ProjectImages/foodApp.png"
-import cardProductImg from "../../../assets/ProjectImages/foodApp.png"
+import healthImg from "../../../assets/ProjectImages/health-fitness.png"
+import groceryBudImg from "../../../assets/ProjectImages/grocery-bud.png"
+import movieAppImg from "../../../assets/ProjectImages/movie-App.png"
+import cardProductImg from "../../../assets/ProjectImages/cart-products.png"
 
 export const ProjectCart = [
     {
