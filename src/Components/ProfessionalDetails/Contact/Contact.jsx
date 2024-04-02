@@ -5,8 +5,12 @@ import githubImg from "../../../assets/ContactImages/github (1).png";
 import linkedinImg from "../../../assets/ContactImages/linkedin.png";
 import instagramImg from "../../../assets/ContactImages/instagram.png";
 import twitterImg from "../../../assets/ContactImages/twitter.png";
+import { GetInTouch } from "./GetInTouch";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
   const socialData = [
     {
       name: "github",
@@ -34,23 +38,26 @@ const Contact = () => {
   const emailRef = useRef(null);
 
   const copyEmail = () => {
-    console.log("hi");
+    // console.log("hi");
     if (emailRef.current) {
       emailRef.current.select();
       document.execCommand("copy");
-      alert("Copied Email");
+      toast.success("Copied email successfully!!");
     }
   };
 
   return (
     <div className="contact-container">
       <Navbar />
+
       <div>
         <h1 className="heading-name">Contact</h1>
       </div>
 
+      <GetInTouch />
+
       <div className="email-box">
-        <h2>Email:-</h2>
+        <h2 style={{ opacity: '0.9' }}>Email:-</h2>
 
         <div>
           <input
@@ -67,17 +74,23 @@ const Contact = () => {
       </div>
 
       <div className="social">
-        <h2 style={{ color: 'white' }}>Socials</h2>
+        <h2 style={{ color: 'white', opacity: '0.9' }}>Socials</h2>
         <div className="img-div">
           {socialData.map((item, index) => {
             return (
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" key={index}>
                 <img src={item.socialImg} alt={item.name} />
               </a>
             );
           })}
         </div>
       </div>
+
+
+      <ToastContainer
+        position="top-center"
+      />
+
     </div>
   );
 };

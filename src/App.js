@@ -5,10 +5,13 @@ import Certificate from "./Components/ProfessionalDetails/Certificate/Certificat
 import Project from "./Components/ProfessionalDetails/Projects/Project";
 import Contact from "./Components/ProfessionalDetails/Contact/Contact";
 import { Layout } from "./Layout/Layout";
+// import { PersonalDetail } from "./Components/PersonalDetails/PersonalDetails";
 
 function App() {
+
   const router = createBrowserRouter([
     {
+
       path: "/",
       element: <Layout />,
       children: [

@@ -1,36 +1,68 @@
 import React from "react";
 
-import foodAppImg from "../../../assets/ProjectImages/foodApp.png"
-import passwordGeneratorImg from "../../../assets/ProjectImages/passwordGenerator.png"
-import healthImg from "../../../assets/ProjectImages/health-fitness.png"
-import groceryBudImg from "../../../assets/ProjectImages/grocery-bud.png"
-import movieAppImg from "../../../assets/ProjectImages/movie-App.png"
-import cardProductImg from "../../../assets/ProjectImages/cart-products.png"
+import foodAppImg from "../../../assets/ProjectImages/foodApp.png";
+import passwordGeneratorImg from "../../../assets/ProjectImages/passwordGenerator.png";
+import healthImg from "../../../assets/ProjectImages/health-fitness.png";
+import groceryBudImg from "../../../assets/ProjectImages/grocery-bud.png";
+import movieAppImg from "../../../assets/ProjectImages/movie-App.png";
+import cardProductImg from "../../../assets/ProjectImages/cart-products.png";
+import pokemon from "../../../assets/ProjectImages/pokemon-image.png"
+import stikeyNotes from "../../../assets/ProjectImages/Stickey-notes.png"
+import weatherApi from "../../../assets/ProjectImages/Weather-api.png"
+import emojee from "../../../assets/ProjectImages/emojee-app.png"
+import employees from "../../../assets/ProjectImages/employees-card.png"
+import imageSearch from "../../../assets/ProjectImages/imageSearch-app.png"
+import meal from "../../../assets/ProjectImages/meal-app.png"
+import leatherBoard from "../../../assets/ProjectImages/leatherbord.png"
+import Age from "../../../assets/ProjectImages/Age-calculator.png"
+import bank from "../../../assets/ProjectImages/Axis-bank.png"
+import about from "../../../assets/ProjectImages/about-compny-details.png"
+import major from "../../../assets/ProjectImages/major-project-html-css.png"
+import textUtils from "../../../assets/ProjectImages/textUtils.png"
 
 export const ProjectCart = [
     {
-        image: foodAppImg,
-        title: "GeekFood",
+        image: meal,
+        title: "Meal App",
         overView:
-            "A web application built with ReactJS and TailwindCSS for e-comers purposes",
+            "_ A web application built with ReactJS and TailwindCSS for e-comers purposes",
         tech: " Css | TailwindCSS | ReactJs ",
-        preview: "https://day-3-react-foods.vercel.app/",
-        githubLink: "https://github.com/Md-ismaeel/Day-3-ReactFoods",
+        preview: "https://meal-app-react-tau.vercel.app/",
+        githubLink: "https://github.com/Md-ismaeel/meal-app-react",
     },
     {
         image: passwordGeneratorImg,
         title: "Password Generator",
         overView:
-            "A ReactJS and TailwindCSS application that generates secure passwords",
-        tech: "HTML5 | CSS3 | React",
+            "_ A ReactJS and TailwindCSS application that generates secure passwords",
+        tech: "HTML5 | Css | ReactJS",
         preview: "https://password-generator-use-ref-use-call-react.vercel.app/",
-        githubLink: "https://github.com/Md-ismaeel/password-generator-useref-usecall-react.."
+        githubLink:
+            "https://github.com/Md-ismaeel/password-generator-useref-usecall-react..",
+    },
+    {
+        image: textUtils,
+        title: "TextUtils",
+        overView:
+            "_ A web application built with ReactJS and TailwindCSS for converting text upper to lover and them change",
+        tech: "TailwindCSS | ReactJs ",
+        preview: "https://text-utill-react.vercel.app/",
+        githubLink: "https://github.com/Md-ismaeel/textUtill-react",
+    },
+    {
+        image: foodAppImg,
+        title: "GeekFood",
+        overView:
+            "_ A web application built with ReactJS and TailwindCSS for e-comers purposes",
+        tech: " Css | TailwindCSS | ReactJs ",
+        preview: "https://day-3-react-foods.vercel.app/",
+        githubLink: "https://github.com/Md-ismaeel/Day-3-ReactFoods",
     },
     {
         image: healthImg,
         title: "Physical Health",
         overView:
-            "- A ReactJS and TailwindCSS app for tracking physical health metrics.",
+            "_ A ReactJS and TailwindCSS app for tracking physical health metrics.",
         tech: "TailwindCSS | ReactJs | Axios ",
         preview: "https://health-fitness-react.vercel.app/",
         githubLink: "https://github.com/Md-ismaeel/health-fitness-react",
@@ -39,7 +71,7 @@ export const ProjectCart = [
         image: groceryBudImg,
         title: "Grocery Bud",
         overView:
-            "A ReactJS and TailwindCSS app for save grocery data to card implemented localStorage",
+            "_ A ReactJS and TailwindCSS app for save grocery data to card implemented localStorage",
         tech: "ReactJs | Css",
         preview: "https://grocery-bud-react-nu.vercel.app/",
         githubLink: "https://github.com/Md-ismaeel/grocery-bud-react",
@@ -48,7 +80,7 @@ export const ProjectCart = [
         image: cardProductImg,
         title: "Cart App",
         overView:
-            "- A ReactJS  application for managing shopping cart functionalities.",
+            "_ A ReactJS  application for managing shopping cart functionalities.",
         tech: "ReactJs | Css ",
         preview: "https://cart-product-reacts.vercel.app/",
         githubLink: "https://github.com/Md-ismaeel/cartProduct-reacts",
@@ -56,104 +88,108 @@ export const ProjectCart = [
     {
         image: movieAppImg,
         title: "Movie App",
-        overView:
-            "A ReactJS  application for browsing and viewing movies.",
+        overView: "_ A ReactJS  application for browsing and viewing movies.",
         tech: "ReactJs | Css ",
         preview: "https://color-picker-and-netflix-mivies-react.vercel.app/",
-        githubLink: "https://github.com/Md-ismaeel/color-picker-and-netflix-mivies-react",
+        githubLink:
+            "https://github.com/Md-ismaeel/color-picker-and-netflix-mivies-react",
     },
-    // {
-    //     image: pokemonImg,
-    //     title: "Pokemon App",
-    //     overView:
-    //         "A web application developed with HTML5, CSS3, JavaScript, and API integration for exploring Pokémon data.",
-    //     tech: "HTML5 | CSS3 | JavaScript | API",
-    //     preview: "https://amanulla2022.github.io/pokemon-app/",
-    //     githubLink: "https://github.com/Amanulla2022/pokemon-app",
-    // },
-    // {
-    //     image: mernImg,
-    //     title: "eCommerce Website",
-    //     overView:
-    //         "A full-stack eCommerce website built using Vite, TailwindCSS, DaisyUi, Node.js, ReactDOM, and a database.",
-    //     tech: "MERN with Vite",
-    //     preview: "https://github.com/Amanulla2022/MERN_ECOMMERCE_FULL_STACK",
-    //     githubLink: "https://github.com/Amanulla2022/MERN_ECOMMERCE_FULL_STACK",
-    // },
-    // {
-    //     image: chartImg,
-    //     title: "Real Time Chart ",
-    //     overView:
-    //         "A web application built with HTML5, CSS3, JavaScript, and Chart.js for displaying real-time data visualization.",
-    //     tech: "HTML5 | CSS3 | JavaScript | Chart.js",
-    //     preview: "https://amanulla2022.github.io/real-time-chart/",
-    //     githubLink: "https://github.com/Amanulla2022/real-time-chart",
-    // },
-    // {
-    //     image: clockImg,
-    //     title: "Digital Clock",
-    //     overView:
-    //         "A simple digital clock created with HTML5, CSS3, and JavaScript.",
-    //     tech: "HTML5 | CSS3 | JavaScript",
-    //     preview: "https://amanulla2022.github.io/digital-watch/",
-    //     githubLink: "https://github.com/Amanulla2022/digital-watch",
-    // },
-    // {
-    //     image: leaderboardImg,
-    //     title: "Leader Board ",
-    //     overView:
-    //         "An HTML5, CSS3, and JavaScript application for displaying and managing leaderboards.",
-    //     tech: "HTML5 | CSS3 | JavaScript",
-    //     preview: "https://password-generator-use-ref-use-call-react.vercel.app/",
-    //     githubLink: "https://github.com/Md-ismaeel/password-generator-useref-usecall-react..",
-    // },
-    // {
-    //     image: stickyNotesImg,
-    //     title: "Sticky Notes",
-    //     overView:
-    //         "An application built with HTML5, CSS3, and JavaScript for creating and managing sticky notes.",
-    //     tech: "HTML5 | CSS3 | JavaScript",
-    //     preview: "https://amanulla2022.github.io/stickyNotes-App/",
-    //     githubLink: "https://github.com/Amanulla2022/stickyNotes-App",
-    // },
-    // {
-    //     image: todoImg,
-    //     title: "Todo App",
-    //     overView:
-    //         "A Todo list application developed using TailwindCSS and Next.js.",
-    //     tech: "Tailwind | NextJs",
-    //     preview: "https://todoapp-liart-chi.vercel.app/",
-    //     githubLink: "https://github.com/Amanulla2022/todoapp",
-    // },
-    // {
-    //     image: oldPortfolioImg,
-    //     title: "Old Portfolio",
-    //     overView: "A portfolio website built with ReactJS.",
-    //     tech: "ReactJS | HTMl | CSS",
-    //     preview: "https://frabjous-mermaid-32f1fa.netlify.app/",
-    //     githubLink: "https://github.com/Amanulla2022/my_portfolio",
-    // },
-    // {
-    //     image: "",
-    //     title: "eCommerce Basic",
-    //     overView:
-    //         "A basic eCommerce website developed with HTML5, SASS, JavaScript, and ExpressJs.",
-    //     tech: "HTML5 | SASS | JavaScript | ExpressJs",
-    //     preview: "https://github.com/Amanulla2022/Ecommerce_Website",
-    //     githubLink: "https://github.com/Amanulla2022/Ecommerce_Website",
-    // },
-    // {
-    //     image: memesImg,
-    //     title: "Memes App",
-    //     overView:
-    //         "An Android application developed using Kotlin for creating and sharing memes.",
-    //     tech: "Android Development | Kotlin",
-    //     preview: "https://github.com/Amanulla2022/my_portfolio",
-    //     githubLink: "https://github.com/Amanulla2022/my_portfolio",
-    // },
+    {
+        image: employees,
+        title: "Employee Card",
+        overView: "_ A ReactJS  application for Adding Employees Data.",
+        tech: "ReactJs | TailwindCss ",
+        preview: "https://employ-add-cart-react.vercel.app/",
+        githubLink: "https://github.com/Md-ismaeel/Employ-add-cart-react",
+    },
+    {
+        image: pokemon,
+        title: "Pokemon App",
+        overView:
+            "_ A web application developed with HTML5, CSS3, JavaScript, and API integration for exploring Pokémon data.",
+        tech: "HTML5 | Css | JavaScript | Api",
+        preview: "https://pokemon-project-js.vercel.app/",
+        githubLink: "https://github.com/Md-ismaeel/pokemonProject_js",
+    },
+    {
+        image: imageSearch,
+        title: "image Search App",
+        overView:
+            "_ A web application developed with html css javScript and api integration for exploring Images",
+        tech: "HTML5 | Css | JavaScript | Api",
+        preview: "https://md-ismaeel.github.io/ImageSearchApp/",
+        githubLink: "https://github.com/Md-ismaeel/ImageSearchApp/deployments",
+    },
+    {
+        image: weatherApi,
+        title: "Weather App",
+        overView:
+            "_ A web application built with HTML5, CSS3, JavaScript to show the weather data",
+        tech: "HTML5 | Css | JavaScript | Api",
+        preview: "https://md-ismaeel.github.io/weatherApi/",
+        githubLink: "https://github.com/Md-ismaeel/weatherApi",
+    },
+    {
+        image: leatherBoard,
+        title: "Leader Board ",
+        overView:
+            "An HTML5, Css, and JavaScript application for displaying and managing leaderboard.",
+        tech: "HTML5 | Css | JavaScript",
+        preview: "https://md-ismaeel.github.io/leaderBoard_js/",
+        githubLink: "https://github.com/Md-ismaeel/leaderBoard_js",
+    },
+
+    {
+        image: stikeyNotes,
+        title: "Sticky Notes",
+        overView:
+            "An application built with HTML5, Css, and JavaScript for creating and managing sticky notes.",
+        tech: "HTML5 | Css | JavaScript",
+        preview: "https://md-ismaeel.github.io/StickeyNotesProjects_js/",
+        githubLink: "https://github.com/Md-ismaeel/StickeyNotesProjects_js",
+    },
+    {
+        image: emojee,
+        title: "Emojee App",
+        overView:
+            "_ A web application developed using html css, javaScript to show the data from Api",
+        tech: "HTML5 | Css | javaScript | Api",
+        preview: "https://todoapp-liart-chi.vercel.app/",
+        githubLink: "https://md-ismaeel.github.io/EmojiProject_js/",
+    },
+    {
+        image: Age,
+        title: "Age Calculator",
+        overView:
+            "_ A web App to developed using Html Css and JavaScript to calculate Age.",
+        tech: " HTMl | CSS | javaScript",
+        preview: "https://md-ismaeel.github.io/AgeCAlculator_js/",
+        githubLink: "https://github.com/Md-ismaeel/AgeCAlculator_js",
+    },
+    {
+        image: bank,
+        title: "Axis Bank clone",
+        overView:
+            "_ A axis bank website clone for learning purpose using with Htm and Css",
+        tech: "HTML5 | Css",
+        preview: "https://md-ismaeel.github.io/Geekster_Geekathon_Project_Mct/",
+        githubLink: "https://github.com/Amanulla2022/Ecommerce_Website",
+    },
+    {
+        image: about,
+        title: "Static web Page",
+        overView: "_ A wep page to show the detail about company",
+        tech: "HTML5 | Css",
+        preview: "https://md-ismaeel.github.io/Weekly-Test-Css-Propertis/",
+        githubLink: "https://github.com/Md-ismaeel/Geekster_Geekathon_Project_Mct",
+    },
+    {
+        image: major,
+        title: "Static web Page",
+        overView: "_ A wep page to show the detail about company",
+        tech: "HTML5 | Css",
+        preview: "https://md-ismaeel.github.io/major-project-clone/",
+        githubLink: "hhttps://github.com/Md-ismaeel/major-project-clone",
+    },
 ];
 
-/*************************************
- * 
- * 
- *************************************/

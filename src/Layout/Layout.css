@@ -4,4 +4,18 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.left-home {
+    height: 45rem;
+}
+
+.right-home {
+    height: 44rem;
+    overflow: scroll;
+}
+
+.right-home::-webkit-scrollbar {
+    display: none;
 }

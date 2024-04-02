@@ -5,29 +5,30 @@ import { ProjectCart } from "./ProjectCart";
 import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 
-// console.log(ProjectCart);
 
 const Project = () => {
   const [tabSelect, setTabSelect] = useState("All");
   const [projectData, setProjectData] = useState(ProjectCart);
   const filterList = ["All", "ReactJS", "JavaScript", "Other"];
 
-  const handleFilter = (skill) => {
-    setTabSelect(skill);
-    if (skill === "All") {
+  const handleFilter = (items) => {
+    setTabSelect(items);
+    if (items === "All") {
       setProjectData(ProjectCart);
-    } else if (skill === "Other") {
-      const otherProjects = ProjectCart.filter(
-        (project) =>
-          !project.tech.toLowerCase().includes("react") &&
-          !project.tech.toLowerCase().includes("javascript")
+
+    } else if (items === "Other") {
+      const otherProjects = ProjectCart.filter((project) =>
+        !project.tech.toLowerCase().includes("react") &&
+        !project.tech.toLowerCase().includes("javascript")
       );
       setProjectData(otherProjects);
+
     } else {
       const filteredProjects = ProjectCart.filter((project) =>
-        project.tech.toLowerCase().includes(skill.toLowerCase())
+        project.tech.toLowerCase().includes(items.toLowerCase())
       );
       setProjectData(filteredProjects);
+
     }
   };
   return (
@@ -61,7 +62,7 @@ const Project = () => {
             justifyContent: "space-between",
             alignItems: "center",
             flexWrap: "wrap",
-            gap:'1rem'
+            gap: '1rem'
           }}
         >
           {projectData.map((item, index) => {
@@ -99,14 +100,14 @@ const Project = () => {
                   </figure>
                 </a>
 
-                <p style={{textAlign:'center', fontSize:'16px', marginTop:'10px', color:'white', opacity:'0.6'}}>{item.overView}</p>
+                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '10px', color: 'white', opacity: '0.6' }}>{item.overView}</p>
 
-                <p style={{textAlign:'center', fontSize:'16px', marginTop:'10px', color:'white', opacity:'0.8'}}>{item.tech}</p>
+                <p style={{ textAlign: 'center', fontSize: '16px', marginTop: '10px', color: 'white', opacity: '0.8' }}>{item.tech}</p>
 
-                <div style={{display:'flex', flexDirection:'column',justifyContent:'center',alignContent:'center', width:'100%', gap:'0.7rem', marginTop:'1rem'}}>
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', width: '100%', gap: '0.7rem', marginTop: '1rem' }}>
 
-                  <a href={item.preview} target="_blank"  id="ac-btn"><FaEye />Preview</a>
-                  <a href={item.githubLink}  target="_blank" id="ac-btn"><FaGithub />GitHub</a>
+                  <a href={item.preview} target="_blank" id="ac-btn"><FaEye />Preview</a>
+                  <a href={item.githubLink} target="_blank" id="ac-btn"><FaGithub />GitHub</a>
 
                 </div>
               </li>

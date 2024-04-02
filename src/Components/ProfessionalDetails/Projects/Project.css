@@ -1,15 +1,14 @@
 .project-container {
     position: relative;
     width: 57rem;
-    min-width: 10rem;
+    min-height: 44rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     background-color: #21849E;
-    border: 1px solid white;
+    border: 1px solid rgb(63, 63, 63);
     border-radius: 20px;
     padding: 2rem 2rem;
-    /* overflow-y: scroll; */
 }
 
 
