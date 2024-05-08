@@ -18,7 +18,7 @@ const ProgrammingLanguages = () => {
     { name: "Hindi", proficiency: "95%" },
     { name: "English", proficiency: "75%" },
     { name: "Urdu", proficiency: "80%" },
-    { name: "Telugu", proficiency: "30%" },
+    { name: "Telugu", proficiency: "20%" },
   ];
 
   return (

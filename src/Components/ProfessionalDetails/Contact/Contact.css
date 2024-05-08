@@ -1,21 +1,8 @@
-.contact-container {
-    position: relative;
-    width: 57rem;
-    min-height: 44rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    background-color: #21849E;
-    border: 1px solid rgb(63, 63, 63);
-    border-radius: 20px;
-    padding: 2rem 2rem;
-}
-
-
 .heading-name {
     display: inline-block;
     color: white;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .heading-name::after {
@@ -81,6 +68,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
     background-color: #22677B;
@@ -89,6 +77,7 @@
 }
 
 .img-div {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,4 +90,67 @@
     transition-duration: .3s;
     cursor: pointer;
     filter: drop-shadow(2px 4px 29px rgb(246, 246, 107));
+}
+
+
+@media screen and (max-width:320px) {
+    .input-mail-div {
+        width: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .email-input {
+        min-width: 13.5rem;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .copy-btn {
+        border-radius: 10px;
+    }
+
+    .img-div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width:321px) and (max-width:376px) {
+    .input-mail-div {
+        width: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .email-input {
+        min-width: 13.5rem;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .copy-btn {
+        border-radius: 10px;
+    }
+
+    .img-div {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
 }

@@ -45,12 +45,14 @@ export const PersonalDetail = () => {
         <div className="personal-img">
           <img src={myImage} height={"200px"} width={"150px"} alt="dp-image" />
         </div>
+
         <div className="name-para">
           <h3> MD ISMAIL</h3>
           <p>{text[index]}</p>
           <br />
           <hr className="personal-hr" />
         </div>
+
         <div className="personal-detail-box">
           <div className="personal-age">
             <span>
@@ -69,6 +71,7 @@ export const PersonalDetail = () => {
               <p>{age} Year Old</p>
             </div>
           </div>
+
           <div className="personal-location">
             <span>
               <svg
@@ -86,6 +89,7 @@ export const PersonalDetail = () => {
               <p>Hyderabad India</p>
             </div>
           </div>
+
           <div className="personal-type">
             <span>
               <svg
@@ -103,6 +107,7 @@ export const PersonalDetail = () => {
               <p>INTJ-T</p>
             </div>
           </div>
+
         </div>
 
         <div className="react-icons">

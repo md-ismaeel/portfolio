@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="commonRightStyle">
       <Navbar />
 
       <div>
@@ -59,7 +59,7 @@ const Contact = () => {
       <div className="email-box">
         <h2 style={{ opacity: '0.9' }}>Email:-</h2>
 
-        <div>
+        <div className="input-mail-div">
           <input
             className="email-input"
             ref={emailRef}

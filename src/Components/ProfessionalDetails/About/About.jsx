@@ -12,7 +12,7 @@ export const About = () => {
     };
 
     return (
-        <div className="about-container">
+        <div className="commonRightStyle">
             <Navbar />
             <div>
                 <h1 className="heading-name">About Me</h1>
@@ -66,7 +66,7 @@ export const About = () => {
             </div>
 
             <div className="exploring-creativity">
-                <div style={{ textAlign: 'center', color: 'white', marginBottom:'2rem'}}>
+                <div style={{ textAlign: 'center', color: 'white', marginBottom: '2rem' }}>
                     <h2>Exploring creativity</h2>
                 </div>
                 <div className="explore-box">
@@ -103,7 +103,6 @@ export const About = () => {
             <div className="development-skills">
                 <Skills />
             </div>
-
 
         </div>
     );

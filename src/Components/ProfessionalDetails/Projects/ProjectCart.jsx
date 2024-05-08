@@ -19,14 +19,34 @@ import bank from "../../../assets/ProjectImages/Axis-bank.png"
 import about from "../../../assets/ProjectImages/about-compny-details.png"
 import major from "../../../assets/ProjectImages/major-project-html-css.png"
 import textUtils from "../../../assets/ProjectImages/textUtils.png"
+import movies from "../../../assets/ProjectImages/Screenshot 2024-05-08 091630.png"
+import drive from "../../../assets/ProjectImages/Screenshot 2024-05-08 091841.png"
 
 export const ProjectCart = [
+    {
+        image: drive,
+        title: "Google Drive",
+        overView:
+            "_ A web application built with ReactJS and TailwindCSS for upload the data download the data and login with firebase",
+        tech: "HTML5 | TailwindCSS | ReactJs ",
+        preview: "https://google-drive-gray.vercel.app/",
+        githubLink: "https://github.com/md-ismaeel/Google-drive",
+    },
+    {
+        image: movies,
+        title: "Movie App",
+        overView:
+            "_ A web application built with ReactJS and TailwindCSS for e-comers purposes",
+        tech: "HTML5| TailwindCSS | ReactJs ",
+        preview: "https://movix-app-wheat.vercel.app/",
+        githubLink: "https://github.com/md-ismaeel/movix-app",
+    },
     {
         image: meal,
         title: "Meal App",
         overView:
             "_ A web application built with ReactJS and TailwindCSS for e-comers purposes",
-        tech: " Css | TailwindCSS | ReactJs ",
+        tech: "HTML5 | Css | TailwindCSS | ReactJs ",
         preview: "https://meal-app-react-tau.vercel.app/",
         githubLink: "https://github.com/Md-ismaeel/meal-app-react",
     },

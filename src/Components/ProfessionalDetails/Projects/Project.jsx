@@ -28,11 +28,11 @@ const Project = () => {
         project.tech.toLowerCase().includes(items.toLowerCase())
       );
       setProjectData(filteredProjects);
-
     }
   };
+
   return (
-    <div className="project-container">
+    <div className="commonRightStyle">
       <Navbar />
       <div>
         <h1 className="heading-name">My Projects</h1>
@@ -41,59 +41,22 @@ const Project = () => {
       <div className="project-data">
         <ul className="ul-style">
           {filterList.map((items, index) => (
-            <li
-              key={index}
-              style={{
-                color: tabSelect === items ? "#FFD700" : "inherit",
-                cursor: "pointer",
-                listStyleType: "none",
-              }}
-              onClick={() => handleFilter(items)}
-            >
+            <li key={index} onClick={() => handleFilter(items)} style={{ color: tabSelect === items ? "#FFD700" : "inherit", cursor: "pointer", listStyleType: "none", }}>
               {items}
             </li>
           ))}
         </ul>
 
-        <ul
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "wrap",
-            gap: '1rem'
-          }}
-        >
+        <ul className="project-ul">
           {projectData.map((item, index) => {
             return (
-              <li
-                key={index}
-                style={{
-                  listStyle: "none",
-                  display: "flex",
-                  flexDirection: "column",
-                  width: "27%",
-                }}
-              >
-                <a
-                  href={item.preview}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
+              <li key={index} className="project-ul-li">
+                <a href={item.preview} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white" }}>
                   <h3 style={{ fontSize: "18px", marginTop: '2rem', textAlign: 'center', opacity: '0.8' }}>{item.title}</h3>
 
                   <figure style={{ marginTop: '1rem' }}>
                     {item.image ? (
-                      <img
-                        id="pro-img"
-                        src={item.image}
-                        width={"100%"}
-                        height={"150px"}
-                        alt={item.title}
-                        style={{ borderRadius: '20px' }}
-                      />
+                      <img id="pro-img" src={item.image} width={"100%"} height={"150px"} alt={item.title} style={{ borderRadius: '20px' }} />
                     ) : (
                       <div>No Image Available</div>
                     )}
@@ -115,6 +78,7 @@ const Project = () => {
           })}
         </ul>
       </div>
+
     </div>
   );
 };

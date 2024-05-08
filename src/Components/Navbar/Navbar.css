@@ -18,5 +18,78 @@
     opacity: 0.8;
     font-size: 18px;
     padding: 10px;
+}
 
+.list-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    background-color: rgb(189, 186, 186);
+    right: 15px;
+    top: 40px;
+    list-style: none;
+    background-color: transparent;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+    color: white;
+}
+
+.menu-ul {
+    width: 9rem;
+    padding: 1.5rem 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    background-color: rgb(43, 41, 41);
+    z-index: 2;
+}
+
+@media screen and (max-width:320px) {
+    .list-menu {
+        display: flex;
+    }
+
+    .list-container {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:376px) {
+    .list-menu {
+        display: flex;
+    }
+
+    .list-container {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:377px) and (max-width:426px) {
+    .list-menu {
+        display: flex;
+    }
+
+    .list-container {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:427px) and (max-width:769px) {
+    .list-menu {
+        display: flex;
+    }
+
+    .list-container {
+        display: none !important;
+    }
 }

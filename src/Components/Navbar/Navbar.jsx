@@ -1,34 +1,54 @@
 import React, { useEffect, useState } from 'react'
 import "../Navbar/Navbar.css"
 import { NavLink, useLocation } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdCancel } from "react-icons/md";
+
 
 const Navbar = () => {
 
     const location = useLocation();
 
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(false);
+    const [show, setShow] = useState(false);
 
     useEffect(() => {
         setActive(location.pathname)
     }, [location])
 
+
+    const NavItem = ({ to, label, active }) => (
+        <li className={`nav-list`}>
+            <NavLink to={to} style={{ color: active === to ? '#FFDB70' : 'white' }} >{label}</NavLink>
+        </li>
+    );
+
     return (
         <>
             <ul className='list-container' style={{ backgroundColor: "#294047", display: 'flex', color: 'white' }}>
-                <li className='nav-list'>
-                    <NavLink to="/" style={{ color: active === "/" ? '#FFDB70' : 'white' }}>About</NavLink>
-                </li>
-                <li className='nav-list'>
-                    <NavLink to="/certificate" style={{ color: active === "/certificate" ? '#FFDB70' : 'white' }}>Certificate</NavLink>
-                </li>
-                <li className='nav-list'>
-                    <NavLink to="/project" style={{ color: active === "/project" ? '#FFDB70' : 'white' }}>Project</NavLink>
-                </li>
-                <li className='nav-list'>
-                    <NavLink to="/contact" style={{ color: active === "/contact" ? '#FFDB70' : 'white' }}>Contact</NavLink>
-                </li>
+                <NavItem to="/" label="About" active={active} />
+                <NavItem to="/certificate" label="Certificate" active={active} />
+                <NavItem to="/project" label="Project" active={active} />
+                <NavItem to="/contact" label="Contact" active={active} />
             </ul>
+
+            <div className='list-menu'>
+                <div style={{ width: '150px', display: 'flex', justifyContent: 'end', alignItems: 'center' }}>
+                    <button className='menu-button' onClick={() => setShow(!show)} >{!show ? <GiHamburgerMenu /> : <MdCancel />}</button>
+                </div>
+                {show ? (
+                    <ul className='menu-ul'>
+                        <NavItem to="/" label="About" active={active} />
+                        <NavItem to="/certificate" label="Certificate" active={active} />
+                        <NavItem to="/project" label="Project" active={active} />
+                        <NavItem to="/contact" label="Contact" active={active} />
+                    </ul>
+                ) : (
+                    ""
+                )}
+
+            </div>
         </>
     )
 }
-export default Navbar
+export default Navbar;

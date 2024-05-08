@@ -3,7 +3,7 @@ import "../Certificate/Certificate.css"
 import Navbar from '../../Navbar/Navbar'
 const Certificate = () => {
   return (
-    <div className='certificate-container'>
+    <div className='commonRightStyle'>
       <Navbar />
       <div>
         <h1 className="heading-name">My Certificates</h1>
