@@ -21,6 +21,7 @@ import major from "../../../assets/ProjectImages/major-project-html-css.png"
 import textUtils from "../../../assets/ProjectImages/textUtils.png"
 import movies from "../../../assets/ProjectImages/Screenshot 2024-05-08 091630.png"
 import drive from "../../../assets/ProjectImages/Screenshot 2024-05-08 091841.png"
+import resume from "../../../assets/ProjectImages/resume-template.png"
 
 export const ProjectCart = [
     {
@@ -49,6 +50,15 @@ export const ProjectCart = [
         tech: "HTML5 | Css | TailwindCSS | ReactJs ",
         preview: "https://meal-app-react-tau.vercel.app/",
         githubLink: "https://github.com/Md-ismaeel/meal-app-react",
+    },
+    {
+        image: resume,
+        title: "Resume - Template",
+        overView:
+            "_The application is designed to be responsive, ensuring a seamless experience across various devices.",
+        tech: "HTML5 | Css | JavaScript",
+        preview: "https://jinu-vijayan.github.io/JS_GEEKATHON_TEAM14/Ismail/idx.html",
+        githubLink: "https://github.com/Jinu-Vijayan/JS_GEEKATHON_TEAM14/tree/main/Ismail",
     },
     {
         image: passwordGeneratorImg,
