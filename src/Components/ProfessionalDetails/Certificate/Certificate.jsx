@@ -6,8 +6,14 @@ const Certificate = () => {
     <div className='commonRightStyle'>
       <Navbar />
       <div>
-        <h1 className="heading-name">My Certificates</h1>
+        <h1 className="heading-name">My Resume</h1>
       </div>
+
+      <div className='resume-sec'>
+        <h2>Resume :-</h2>
+        <a target='_blank' href={`https://drive.google.com/file/d/1bMxjtOdJmuulNzbZ2UknaRHlSNANZEfI/view?usp=drive_link`}>Preview</a>
+      </div>
+
     </div>
   )
 }

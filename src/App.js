@@ -20,7 +20,7 @@ function App() {
           element: <About />,
         },
         {
-          path: "/certificate",
+          path: "/resume",
           element: <Certificate />,
         },
         {

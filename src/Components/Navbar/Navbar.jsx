@@ -27,9 +27,9 @@ const Navbar = () => {
         <>
             <ul className='list-container' style={{ backgroundColor: "#294047", display: 'flex', color: 'white' }}>
                 <NavItem to="/" label="About" active={active} />
-                <NavItem to="/certificate" label="Certificate" active={active} />
                 <NavItem to="/project" label="Project" active={active} />
                 <NavItem to="/contact" label="Contact" active={active} />
+                <NavItem to="/resume" label="Resume" active={active} />
             </ul>
 
             <div className='list-menu'>
@@ -39,9 +39,9 @@ const Navbar = () => {
                 {show ? (
                     <ul className='menu-ul'>
                         <NavItem to="/" label="About" active={active} />
-                        <NavItem to="/certificate" label="Certificate" active={active} />
                         <NavItem to="/project" label="Project" active={active} />
                         <NavItem to="/contact" label="Contact" active={active} />
+                        <NavItem to="/resume" label="Resume" active={active} />
                     </ul>
                 ) : (
                     ""
