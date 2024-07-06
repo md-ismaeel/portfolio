@@ -11,7 +11,7 @@ export const PersonalDetail = () => {
 
   useEffect(() => {
     let interval = null;
-    if (age < 23) {
+    if (age < 24) {
       interval = setInterval(() => {
         setAge((prev) => prev + 1);
       }, 50);

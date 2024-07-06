@@ -22,8 +22,19 @@ import textUtils from "../../../assets/ProjectImages/textUtils.png"
 import movies from "../../../assets/ProjectImages/Screenshot 2024-05-08 091630.png"
 import drive from "../../../assets/ProjectImages/Screenshot 2024-05-08 091841.png"
 import resume from "../../../assets/ProjectImages/resume-template.png"
+import netflix from "../../../assets/ProjectImages/Netflix.png"
+// import netflix from "../../../assets/ProjectImages/pokemon-image.png"
 
 export const ProjectCart = [
+    {
+        image: netflix,
+        title: "Netflix clone",
+        overView:
+            "_ A web application built with ReactJS, ExpressJs and MongoDb only Authenticated user can access the movies",
+        tech: "HTML5 | TailwindCSS | ReactJs || NodeJs || ExpressJs || MongoDb",
+        preview: "https://netflix-full-stack-smoky.vercel.app/",
+        githubLink: "https://github.com/md-ismaeel/netflix_fullStack",
+    },
     {
         image: drive,
         title: "Google Drive",
@@ -184,7 +195,7 @@ export const ProjectCart = [
         overView:
             "_ A web application developed using html css, javaScript to show the data from Api",
         tech: "HTML5 | Css | javaScript | Api",
-        preview: "https://todoapp-liart-chi.vercel.app/",
+        preview: "https://md-ismaeel.github.io/EmojiProject_js/",
         githubLink: "https://md-ismaeel.github.io/EmojiProject_js/",
     },
     {
