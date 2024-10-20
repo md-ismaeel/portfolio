@@ -1,6 +1,15 @@
 import React from "react";
 import { useState } from "react";
-import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from "./ProjectsStyle";
+import {
+  Container,
+  Wrapper,
+  Title,
+  Desc,
+  CardContainer,
+  ToggleButtonGroup,
+  ToggleButton,
+  Divider,
+} from "./ProjectsStyle";
 import ProjectCard from "../Cards/ProjectCards";
 import { projects } from "../../data/constants";
 
@@ -34,7 +43,10 @@ const Projects = ({ openModal, setOpenModal }) => {
               JavaScript
             </ToggleButton>
           ) : (
-            <ToggleButton value="web app" onClick={() => setToggle("javaScript")}>
+            <ToggleButton
+              value="javaScript"
+              onClick={() => setToggle("javaScript")}
+            >
               JavaScript
             </ToggleButton>
           )}
@@ -42,14 +54,14 @@ const Projects = ({ openModal, setOpenModal }) => {
           {toggle === "react js" ? (
             <ToggleButton
               active
-              value="android app"
+              value="react js"
               onClick={() => setToggle("react js")}
             >
               React Js
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="android app"
+              value="react js"
               onClick={() => setToggle("react js")}
             >
               React Js
@@ -66,7 +78,7 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="machine learning"
+              value="full stack"
               onClick={() => setToggle("full stack")}
             >
               Full Stack
